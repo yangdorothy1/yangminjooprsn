@@ -48,7 +48,7 @@ body {
     text-align: center;
     
     color: #7b52ac; /* 보라색 글씨 */
-    font-size: 12px; /* 픽셀 폰트는 크면 깨질 수 있어 적당하게 */
+    font-size: 10px; /* 픽셀 폰트는 크면 깨질 수 있어 적당하게 */
     line-height: 1.6;
     padding: 10px;
     word-break: keep-all; /* 단어 단위 줄바꿈 */
