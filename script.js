@@ -2,7 +2,7 @@ const database = [
     "2-3-5-7 scheduled repetition",
     "DON'T PANIC!",
     "KEEP CALM AND STUDY ON",
-    "Cornell Notes Memorization",
+    "Utilize Cornell Notes",
     "Mock Lectures Open Every Evening"
 ];
 
