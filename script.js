@@ -1,11 +1,9 @@
 const database = [
-    "Evidence Based!",
-    "Love Yourself",
-    "Just Do It",
-    "Keep Going",
-    "Coffee Time ☕",
-    "Focus On Now",
-    "You Got This!"
+    "2-3-5-7 scheduled repetition",
+    "DON'T PANIC!",
+    "KEEP CALM AND STUDY ON",
+    "Cornell Notes Memorization",
+    "Mock Lectures Open Every Evening"
 ];
 
 const messageBox = document.getElementById('message-box');
