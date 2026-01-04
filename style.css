@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Press Start 2P';
+    font-family: 'Press Start 2P', cursive; /* 폰트 변경 완료 */
 }
 
 body {
@@ -12,64 +12,69 @@ body {
     margin: 0;
 }
 
-/* 전체 컨테이너: 여기에 배경 이미지를 넣습니다 */
+/* 전체 컨테이너 */
 .container {
-    position: relative; /* 자식 요소들의 기준점 */
+    position: relative;
     
-    /* ⚠️ 중요: 본인이 그린 이미지 크기를 여기에 적어주세요 */
-    width: 300px; 
-    height: 400px; 
+    /* 공유해주신 이미지 비율에 맞춘 크기 */
+    width: 320px; 
+    height: 380px; 
 
-    /* 배경 이미지 설정 (파일 이름을 꼭 맞춰주세요!) */
-    background-image: url('bg.png'); 
-    background-size: contain; /* 이미지가 짤리지 않게 맞춤 */
+    /* 배경 이미지 설정 */
+    /* ⚠️ 저장하신 이미지 파일 이름을 정확히 입력하세요 */
+    background-image: url('pixil-frame-0.png'); 
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    
+    /* 픽셀 아트가 흐려지지 않게 선명하게 처리 */
+    image-rendering: pixelated; 
 }
 
-/* 1. 화면 글자 영역 위치 잡기 */
+/* 1. 화면 글자 영역 (흰색 박스 위치) */
 .screen-area {
     position: absolute;
     
-    /* ⚠️ 그림에 맞춰서 이 숫자들을 조절해야 합니다! */
-    top: 80px;    /* 위에서 얼마나 떨어질지 */
-    left: 50px;   /* 왼쪽에서 얼마나 떨어질지 */
-    width: 200px; /* 화면의 너비 */
-    height: 100px;/* 화면의 높이 */
+    /* 이미지상의 흰색 화면 좌표 */
+    top: 98px;    
+    left: 72px;   
+    width: 175px; 
+    height: 160px;
     
-    /* 글자 정렬 및 색상 */
+    /* 글자 정렬 및 스타일 */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #7b52ac; /* 보라색 글씨 */
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
     
-    /* 위치 확인용 임시 테두리 (위치 다 잡고 나면 border: none; 으로 바꾸세요) */
-    /* border: 1px solid red; */ 
+    color: #7b52ac; /* 보라색 글씨 */
+    font-size: 14px; /* 픽셀 폰트는 크면 깨질 수 있어 적당하게 */
+    line-height: 1.6;
+    padding: 10px;
+    word-break: keep-all; /* 단어 단위 줄바꿈 */
 }
 
-/* 2. 투명 버튼 위치 잡기 */
+/* 2. 투명 버튼 영역 (하단 재생 버튼 위치) */
 .transparent-btn {
     position: absolute;
     
-    /* ⚠️ 그림 속 버튼 위치에 맞춰 조절하세요 */
-    bottom: 50px; /* 밑에서부터의 위치 */
-    left: 110px;  /* 왼쪽에서부터의 위치 */
-    width: 80px;  /* 버튼 크기 */
-    height: 80px;
+    /* 이미지상의 재생 버튼 좌표 */
+    bottom: 50px; 
+    left: 135px; /* 중앙 정렬 */
     
-    background-color: transparent; /* 투명 배경 */
+    width: 50px;  
+    height: 50px;
+    
+    background-color: transparent;
     border: none;
     cursor: pointer;
+    border-radius: 50%;
     
-    /* 위치 확인용 임시 배경색 (위치 다 잡고 나면 transparent로 바꾸세요) */
-    background-color: rgba(255, 0, 0, 0.3); 
+    /* 위치 확인용: 나중에 투명하게 쓰려면 아래 줄을 지우세요 */
+    /* background-color: rgba(255, 0, 0, 0.3); */
 }
 
-/* 클릭했을 때 살짝 눌리는 느낌 (선택사항) */
+/* 버튼 눌렀을 때 살짝 들어가는 효과 */
 .transparent-btn:active {
-    transform: scale(0.95);
+    transform: translateY(2px);
 }
