@@ -17,8 +17,8 @@ body {
     position: relative;
     
     /* 공유해주신 이미지 비율에 맞춘 크기 */
-    width: 320px; 
-    height: 380px; 
+    width: 240px; 
+    height: 285px; 
 
     /* 배경 이미지 설정 */
     /* ⚠️ 저장하신 이미지 파일 이름을 정확히 입력하세요 */
@@ -36,10 +36,10 @@ body {
     position: absolute;
     
     /* 이미지상의 흰색 화면 좌표 */
-    top: 98px;    
-    left: 77px;   
-    width: 175px; 
-    height: 160px;
+    top: 74px;    
+    left: 56px;   
+    width: 131px; 
+    height: 120px;
     
     /* 글자 정렬 및 스타일 */
     display: flex;
@@ -48,7 +48,7 @@ body {
     text-align: center;
     
     color: #7b52ac; /* 보라색 글씨 */
-    font-size: 14px; /* 픽셀 폰트는 크면 깨질 수 있어 적당하게 */
+    font-size: 12px; /* 픽셀 폰트는 크면 깨질 수 있어 적당하게 */
     line-height: 1.6;
     padding: 10px;
     word-break: keep-all; /* 단어 단위 줄바꿈 */
@@ -59,11 +59,11 @@ body {
     position: absolute;
     
     /* 이미지상의 재생 버튼 좌표 */
-    bottom: 50px; 
-    left: 135px; /* 중앙 정렬 */
+    bottom: 37px; 
+    left: 101px; /* 중앙 정렬 */
     
-    width: 50px;  
-    height: 50px;
+    width: 37px;  
+    height: 37px;
     
     background-color: transparent;
     border: none;
