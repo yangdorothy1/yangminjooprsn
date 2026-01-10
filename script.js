@@ -6,7 +6,8 @@ const database = [
     "Mock Lectures Open Every Evening",
     "SLEEP.\nNOW.",
     "don't bite off more than you can chew",
-    "Love Yourself"
+    "Love Yourself",
+    "NIGHT ROUTINE\n1. document\n2. journal\n3. read"
 ];
 
 const messageBox = document.getElementById('message-box');
